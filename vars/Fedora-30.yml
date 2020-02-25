@@ -1,0 +1,18 @@
+---
+default_vnc_general_packages:
+  - htop
+  - nload
+  - net-tools
+
+default_vnc_users:
+  - username: 'linuxuser1'
+    usergroup: 'linuxuser1'
+    #port 5901 is 1
+    vnc_num: 1
+    vnc_default_password: mypassword
+
+default_vnc_desktop_packages:
+  xfce4:
+    - "@Xfce"
+    - firefox
+    - xterm
